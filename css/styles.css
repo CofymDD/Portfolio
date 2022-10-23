@@ -14,12 +14,12 @@ body {
 }
 
 :root {
-	--color-primary: #93c5fd;
-	--color-hover: #ffffff;
+	--color-primary: #ffffff;
+	--color-hover: #dddddd;
 	--color-text-primary: #ffffff;
-	--color-background-primary: #3a526b;
-	--color-background-secondary: #2a3b4d;
-	--color-background-tertiary: #2a3b4d;
+	--color-background-primary: #202020;
+	--color-background-secondary: #2a2a2a;
+	--color-background-tertiary: #3a3a3a;
 
     color-scheme: dark;
 }
@@ -156,11 +156,13 @@ h1, h2, h3, h4, h5, h6, p {
 	height:1.8em;
 	fill:var(--color-primary);
 	filter:drop-shadow(0px 2px 2px rgba(0,0,0,0.2));
-	transition:fill .1s
+	transition:fill .1s;
+	transition: transform .2s;
 }
 
 .links-icon:hover {
-	fill:var(--color-hover)
+	fill:var(--color-hover);
+	transform: scale(1.1);
 }
 
 
